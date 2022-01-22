@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/39a51f5345.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="tools/images/logo_spe_short.png">
+    <link rel="stylesheet" href="tools/styles/fontello.css">
+    <link rel="stylesheet" href="tools/styles/estilos.css">
+    <title>Servicios</title>
+</head>
+
+<body>
+
+    <header class="enc">
+
+        <!--Menu desplegable-->
+        <input type="checkbox" id="btn-menu">
+
+        <div class="container-menu">
+
+            <div class="cont-menu">
+                <nav>
+                    <a href="index.html">SPE</a>
+                    <a href="servicio.html">Servicios</a>
+                    <a href="testimoniales.html">Testimoniales</a>
+                    <a href="contacto.html">Contacto</a>
+
+                </nav>
+
+                <label for="btn-menu" class="icon-equis"></label>
+            </div>
+        </div>
+
+        <!--Termina Menu desplegable-->
+
+        <div class="MenuAndLogo">
+
+            <div class="btn-menu">
+
+                <label for="btn-menu" class="fa fa-bars menuBurger" aria-hidden="true"></label>
+
+            </div>
+
+            <div class="btn-logo">
+                <a href="index.html">
+                    <img src="tools/images/logo_spe.png" alt="logo_spe">
+                </a>
+            </div>
+
+            <div class="titulo">
+
+
+                <h2 class="SPE-title">
+
+                    SPE - Servicios Profesionales de Excelencia
+
+                </h2>
+
+            </div>
+
+        </div>
+
+    </header>
+    <!--Aqui termina el header-->
+
+    <div class="bgFondo">
+
+        <div class="info">
+            <h1 style="text-align: center">Servicios <label for="pho" class="icon-chart-line"></label></h1>
+
+            <div class="imgEnc">
+                <!--imagen de servicios-->
+
+                <img src="tools/images/servicios.jpg" alt="servicios" width="1100px" height="600px"
+                    style="border-radius: 5px;">
+            </div>
+
+
+            <div class="parrafos">
+                <p>En SPE contamos con diversos servicios para nuestros clientes. Ofrecemos:</p>
+
+
+                <div class="listAndIcon">
+                    <div class="list-servicios">
+                        <ul>
+                            <div>
+                                <p>
+                                    <li>Asesoría personalizada, de acuerdo con las necesidades de cada organización.
+                                    </li>
+                                </p>
+                            </div>
+
+                            <div>
+                                <p>
+                                    <li>Apoyo y acompañamiento en procesos de planeación estratégica.</li>
+                                </p>
+                            </div>
+
+                            <div>
+                                <p>
+                                    <li>Análisis de los procesos operativos, con recomendaciones para mejorar su
+                                        eficiencia.
+                                    </li>
+                                </p>
+                            </div>
+
+                            <div>
+                                <p>
+                                    <li>Aplicación de las mejores prácticas de la industria.</li>
+                                </p>
+                            </div>
+
+                            <div>
+                                <p>
+                                    <li>Estudios de mercado.</li>
+                                </p>
+                            </div>
+
+
+                        </ul>
+                    </div>
+
+                    <label for="btn-menu" class="icon-mundo"></label>
+
+                </div>
+
+                <p>Si requiere algún servicio diferente a los mencionados, póngase en contacto con nosotros. Un asesor
+                    revisará sus necesidades y le propondrá</p>
+
+                <p>una cartera de servicios personalizada, sin costo alguno y sin compromiso.</p>
+
+                <br>
+                <br>
+
+            </div>
+        </div>
+        <hr>
+
+        <div class="menuDesplegable">
+            <h2>Servicio por industria</h2>
+
+            <div class="comboBox">
+                <p>Seleccione su industria para ver detalles sobre la misma.</p>
+
+                <div class="menuCBox" style="text-align: center;">
+
+                    <form name="formServices">
+                        <select name='selectbox' onchange="changeImg(this)">
+                            <option selected>Manufactura</option>
+                            <option>Comercio</option>
+                            <option>TI</option>
+                        </select>
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="imgAndTxt">
+
+                <div class="txtService" id="txt">
+
+                    <h3 id="titleM" onchange="changeImg();">Manufactura</h3>
+
+                    <p id="parr1" onchange="changeImg();">En las empresas de manufactura, SPE le puede ayudar a
+                        identificar su</p> <br>
+
+                    <p id="parr2" onchange="changeImg();">cadena productiva de valor, analizar sus líneas de producción
+                        y mejorar</p> <br>
+
+                    <p id="parr3" onchange="changeImg();">sus sistemas de calidad. Contamos con consultores capacitados
+                        en</p> <br>
+
+                    <p id="parr4" onchange="changeImg();">diversos estándares de la industria, como ISO 9000, ISO 14000,
+                    </p> <br>
+
+                    <p id="parr5" onchange="changeImg();">Lean Manufacturing, Kanban, etc. Conocemos y aplicamos las
+                        mejores</p> <br>
+
+                    <p id="parr6" onchange="changeImg();">prácticas con respecto a manejo de inventarios, producción,
+                    </p> <br>
+
+                    <p id="parr7" onchange="changeImg();">proveeduría y procesos de distribución.</p> <br>
+
+                    <p id="parr8" onchange="changeImg();"></p>
+
+                </div>
+                <!--Termina txt-->
+
+                <div class="imgService">
+                    <img name="imagen" src="tools/images/serviciosManufactura.jpg" alt="service1" height="300px"
+                        width="600px" style="border-radius: 5px;">
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+
+        <div class="piePag">
+
+            <div class="enlaces">
+                <nav>
+                    <a href="index.html">SPE</a>
+                    <a href="servicio.html">Servicios</a>
+                    <a href="testimoniales.html">Testimoniales</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+
+            <div class="copy">
+                <p>Copyright &#169 2022 SPE - Todos los derechos resevados</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="tools/js/funciones.js"></script>
+</body>
+
+</html>

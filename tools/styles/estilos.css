@@ -1,0 +1,625 @@
+/*Colores y estilos*/
+html {
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  background-color: #fff;
+}
+
+h1 {
+  color: royalblue;
+  font-size: 50px;
+  margin-left: 70px;
+}
+
+h2 {
+  color: royalblue;
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 25px;
+  color: #1e90ff;
+  padding: 2px 2px 2px 2px;
+  text-align: center;
+}
+p {
+  color: #696969;
+  font-size: 16px;
+  padding: 4px 4px 4px 4px;
+  text-align: center;
+}
+li {
+  color: #696969;
+}
+
+/**************Pagina principal******************/
+
+/*Encabezado*/
+/*Menu lateral*/
+#btn-menu {
+  display: none; /*Desaparecer el cuadro del checkbox*/
+}
+
+.container-menu {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#btn-menu:checked ~ .container-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cont-menu {
+  width: 100%;
+  max-width: 250px;
+  background-color: #1e90ff;
+  height: 100vh;
+  position: relative;
+  transition: all 500ms ease;
+  transform: translateX(-100%);
+}
+
+#btn-menu:checked ~ .container-menu .cont-menu {
+  transform: translateX(0%);
+}
+
+.cont-menu nav {
+  transform: translateY(15%);
+}
+
+.cont-menu nav a {
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  color: #fff;
+  border-left: 5px solid transparent;
+  transition: all 400ms ease;
+}
+
+.cont-menu nav a:hover {
+  border-left: 5px solid #fff;
+  background: #4169e1;
+  color: #000;
+}
+
+.cont-menu label {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.enc {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  box-shadow: 0px 1px 6px 1px rgba(30, 144, 255, 0.75);
+}
+
+.MenuAndLogo {
+  display: flex; /*Alinear los elementos de forma horizontal*/
+  align-items: center;
+  padding-left: 30px; /*Separacion de los dos elementos del borde izquierdo*/
+}
+.btn-logo {
+  padding-left: 6px;
+  padding-top: 14px;
+}
+
+.titulo {
+  padding-left: 20%;
+  padding-top: 8px;
+}
+
+.btn-menu {
+  /*Dar espacio entre el menu y logo*/
+  padding-right: 20px; /*Relleno a la derecha del burger menu*/
+  padding-top: 13px; /*Relleno hacia arriba del burger menu*/
+}
+
+.menuBurger {
+  font-size: 35px;
+  color: #1e90ff;
+  cursor: pointer;
+}
+
+.nav .menuBurger:hover {
+  color: black;
+}
+
+.imgFondo {
+  background-image: url(../images/smartphone.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 440px;
+}
+
+.intro {
+  margin-top: 40px;
+  padding-bottom: 20px;
+  padding-right: 0px;
+}
+
+.parr p {
+  text-align: start;
+  margin-left: 80px;
+}
+
+.container-list-img {
+  display: flex;
+  justify-content: center;
+}
+
+.list {
+  margin-top: 0px;
+  height: 300px;
+  width: 400px;
+  justify-content: center;
+  margin-top: 10px;
+  margin-right: 150px;
+}
+
+.imgServices2 {
+  background-image: url(../images/principal1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 5px;
+  margin-top: 30px;
+  height: 250px;
+  width: 400px;
+}
+
+/*****************apartado quieres saber mas****************/
+
+.list2 {
+  margin-top: 0px;
+  height: 300px;
+  width: 400px;
+  justify-content: center;
+  margin-top: 10px;
+  margin-right: 150px;
+}
+
+.list2 p {
+  text-align: start;
+}
+
+.imgServices3 {
+  background-image: url(../images/principal2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 5px;
+  margin-top: 30px;
+  height: 250px;
+  width: 400px;
+}
+
+/****apartado descripcion de nuestra empresa***/
+
+.list3 {
+  height: 300px;
+  width: 400px;
+  justify-content: center;
+  margin-top: 10px;
+  margin-right: 150px;
+}
+
+.list3 button {
+  margin-top: 0px;
+}
+
+.list3 p {
+  text-align: start;
+}
+
+.imgServices4 {
+  margin-top: 30px;
+  height: 250px;
+  width: 400px;
+}
+
+.imgServices4 label {
+  color: #1072f1;
+  font-size: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.last_contain {
+  padding-bottom: 40px;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  border-color: #1e90ff;
+  border-width: 3px;
+  margin-top: 30px;
+  font-size: 15px;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1e90ff;
+  color: #fff;
+  border-color: #fff;
+}
+
+.descarga {
+  margin-left: 0px;
+}
+
+.botones {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.piePag {
+  background: #696969;
+  font-size: 13.5px;
+  color: #fff;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.enlaces a {
+  text-decoration: none;
+  margin-left: 80px;
+  color: #fff;
+}
+
+.enlaces a:hover {
+  color: #1072f1;
+}
+
+.copy {
+  text-align: center;
+}
+
+.copy p {
+  color: #fff;
+  font-size: 13.5px;
+}
+
+/*************************************Pagina servicios**************************/
+.bgFondo {
+  width: 100%;
+  height: 1500px;
+}
+
+.imgEnc {
+  background-position: center center;
+  background-size: cover;
+  width: 1100px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+.bgFondo .info .parrafos p {
+  text-align: start;
+  margin-left: 120px;
+  margin-right: 90px;
+  margin-top: 40px;
+  padding: 0;
+}
+
+.bgFondo .info .parrafos .list-servicios {
+  margin-left: 150px;
+}
+
+.listAndIcon {
+  display: flex;
+}
+
+.bgFondo .info .parrafos label {
+  margin-left: 130px;
+  font-size: 160px;
+  color: #1072f1;
+}
+
+.bgFondo .menuDesplegable {
+  margin-top: 50px;
+  width: 100%;
+  height: 580px;
+}
+
+.menuDesplegable h2 {
+  text-align: center;
+}
+
+.bgFondo .comboBox {
+  width: 100%;
+  padding-bottom: 10px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.bgFondo .comboBox .menuCBox {
+  margin-top: 30px;
+}
+
+.bgFondo .comboBox .menuCBox select {
+  padding: 5px 40px 5px 40px;
+}
+
+.imgAndTxt {
+  display: flex;
+  margin-top: 30px;
+}
+
+.bgFondo .imgService {
+  width: 600px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.bgFondo .txtService {
+  height: 100px;
+  margin-top: 0px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.bgFondo .txtService h3 {
+  padding: 20px 20px 0px 20px;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.bgFondo .txtService p {
+  text-align: start;
+  margin: 0;
+  padding: 0;
+}
+
+/*****************************Pagina Testimoniales*****************************************/
+.bgFondoT {
+  width: 100%;
+  height: 1610px;
+}
+
+.parrAndIcon {
+  margin-top: 40px;
+  display: flex;
+  align-items: center; /*Alinear verticalmente*/
+}
+
+.parrTestimonio p {
+  margin-left: 150px;
+}
+
+.parrAndIcon label {
+  font-size: 160px;
+  color: #1072f1;
+}
+
+.iconTest {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimoniales {
+  margin-top: 5px;
+  display: flex;
+}
+
+.icono-users {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.icono-users label {
+  color: #1e90ff;
+  font-size: 40px;
+}
+
+.icono-users label:hover {
+  color: #1e90f1;
+  font-size: 40px;
+}
+
+.testimoniales .testimonial {
+  border-radius: 10px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #1e90ff;
+  padding: 0;
+  width: 410px;
+  height: 260px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+.testimoniales .testimonial:hover {
+  border-radius: 10px;
+
+  border-width: 3px;
+  border-style: solid;
+  border-color: #0e50a7;
+}
+
+/*****************************Pagina Contacto*****************************************/
+.bgFondoC {
+  width: 100%;
+  height: 1600px;
+}
+
+.infoContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.imgContacto {
+  background-size: cover;
+  width: 600px;
+  height: 370px;
+}
+
+.txtContacto {
+  width: 500px;
+  height: 300px;
+  margin-top: 0px;
+  margin-left: 60px;
+}
+
+.txtContacto p {
+  text-align: start;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.txtRegistrese {
+  margin-top: 100px;
+  margin-left: 95px;
+  margin-right: 95px;
+}
+
+.txtRegistrese p {
+  text-align: start;
+}
+
+.formAndImgs {
+  display: flex;
+}
+
+.formulario {
+  margin-top: 50px;
+  margin-left: 95px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #1e90f1;
+  width: 650px;
+  height: 650px;
+}
+
+.imgsContacs {
+  background-image: url(../images/contacto3.jpg);
+  background-position: center center;
+  background-size: cover;
+  border-radius: 5px;
+  margin-top: 50px;
+  width: 400px;
+  height: 250px;
+  background-color: yellow;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imgsContacs2 {
+  background-image: url(../images/contacto2.jpg);
+  background-position: center center;
+  background-size: cover;
+  border-radius: 5px;
+  margin-top: 300px;
+  width: 400px;
+  height: 350px;
+  background-color: yellow;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-centrar {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.botonesForm {
+  display: flex;
+  justify-content: center;
+}
+
+/****************************Pagina resultados**********************************/
+
+.bgResultados {
+  width: 100%;
+  height: 83.5vh;
+}
+
+.bgResultados h1 {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  padding-top: 30px;
+  margin-top: 0px;
+}
+
+.container {
+  margin-top: 15px;
+  display: flex;
+}
+
+.infoRegistro {
+  width: 100%;
+  height: 450px;
+  padding-top: 60px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.parrAndsp {
+  display: flex;
+}
+
+.parrAndsp span {
+  display: flex;
+  align-items: center;
+}
+
+.infoRegistro p {
+  text-align: start;
+}
+
+.imgResultado {
+  width: 100%;
+  height: 450px;
+}
+
+.imagenRes {
+  background-image: url(../images/resultado.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 5px;
+  width: 480px;
+  height: 300px;
+  margin-top: 30px;
+}

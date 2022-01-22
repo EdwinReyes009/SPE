@@ -3,12 +3,14 @@
 //Creacion de un arreglo con las imagenes
 let services = new Array();
    
-    services[0]='/tools/images/serviciosManufactura.jpg';
-    services[1]='/tools/images/serviciosComercio.jpg';
-    services[2]='/tools/images/serviciosTI.jpg';
+    services[0]='tools/images/serviciosManufactura.jpg';
+    services[1]='tools/images/serviciosComercio.jpg';
+    services[2]='tools/images/serviciosTI.jpg';
     
 //Cambiar el texto al texto del servicio de manufactura 
     function changeManufactura() {
+
+        imagen.src = services[0]; //Cambiar la imagen
 
         document.getElementById('titleM').innerHTML = 'Manufactura';
 
@@ -32,6 +34,8 @@ let services = new Array();
 
     //Cambiar el texto al texto del servicio de comercio
     function changeComercio() {
+    
+        imagen.src = services[1]; //Cambiar la imagen
 
         document.getElementById('titleM').innerHTML =  'Comercio';
 
@@ -54,6 +58,8 @@ let services = new Array();
 
     //Cambiar el texto al texto del servicio de tecnologías de la información
     function changeTI() {
+
+        imagen.src = services[2]; //Cambiar la imagen
 
         document.getElementById('titleM').innerHTML =  'Tecnologías de la información';
 
@@ -78,7 +84,7 @@ let services = new Array();
     //Seleccionar una opción dependiendo cual es seleccionada se ejecutara una función
     function changeImg(which){
     
-        imagen.src = services[document.formServices.selectbox.selectedIndex]; //Cambiar la imagen
+        /* imagen.src = services[document.formServices.selectbox.selectedIndex]; //Cambiar la imagen */
 
         console.log(document.formServices.selectbox.selectedIndex);
 
